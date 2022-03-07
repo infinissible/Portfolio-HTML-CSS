@@ -86,7 +86,7 @@ header nav ul li a {
 }
 
 .font-color {
-    color:var(--contents-color);
+    color:var(--font-color);
 }
 
 .list {
@@ -108,21 +108,111 @@ header nav ul li a {
     margin: 30px 100px 30px 0px;
 }
 
-footer {
-    padding: 20px 35px;
+.applications {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+    padding: 30px 5px;
+    flex: 1 0 0;
 }
+
+.work1 {
+    opacity: 0.7;
+    background-image: url("../images/work1.jpg");
+    background-size: cover;  
+    background-position: fixed;    
+    border: solid 3px var(--main-color);    width: 100%;
+    margin: 10px;
+    display: flex;    
+    justify-content: flex-start;             
+}
+
+.work1:hover {
+    opacity: 1.0;
+}
+
+.work2 {
+    background-image: url("../images/work2.jpg"); 
+}
+
+.work3 {
+    background-image: url("../images/work3.jpg");
+}
+
+.work4 {
+    background-image: url("../images/work4.jpg");
+}
+
+.work5 {
+    background-image: url("../images/work5.jpg");
+}
+
+.works {
+    opacity: 0.7;
+    background-size: cover;      
+    border: solid 3px var(--main-color);
+    width: 48%;
+    height: 200px;
+    display: flex;
+    margin: 10px 0px;    
+    justify-content: flex-start;  
+}
+
+.works:hover {
+    opacity: 1.0;
+}
+
+.name-tag {
+    margin: 400px 0px 50px 0px;
+    background-color: var(--main-color);
+    display: inline-block;    
+    padding: 20px;
+    font-size: 1.4vw;   
+}
+
+.name-tag2 {
+    margin: 80px 0px 40px 0px;
+    background-color: var(--main-color);
+    display: inline-block;    
+    padding: 20px;
+    font-size: 1.4vw;
+}
+.name-tag h3 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.name-tag h4 {
+    font-size: 10px;
+    color: var(--contents-color);
+}
+
+.name-tag2 h3 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.name-tag2 h4 {
+    font-size: 10px;
+    color: var(--contents-color);
+}
+
+
 
 footer ul {
     display: flex;
     list-style: none; 
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px;
+    
 }
 
 footer ul li a {
     margin: 0 10px;
     padding: 2px 15px;
+    display: flex;
+ 
 }
 
 @media screen and (max-width: 980px) {
