@@ -7,6 +7,7 @@
 :root {
     --main-color: #5fc6d1f8;
     --font-color: rgb(58, 54, 54);
+    --contents-color: rgb(89, 89, 102);
 }
 
 header {
@@ -78,6 +79,35 @@ header nav ul li a {
     color: var(--font-color);
 }
 
+.lists {
+    display: flex;
+    justify-content: flex-start;
+   
+}
+
+.font-color {
+    color:var(--contents-color);
+}
+
+.list {
+    margin: 30px 20px 10px 160px;
+    padding: 0px 10px 50px 0px;
+    border-right: solid 3px var(--contents-color);
+    width: 7%;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.4vw;    
+}
+
+.list-content {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 15px;
+    padding: 5px;
+    margin: 30px 100px 30px 0px;
+}
+
 footer {
     padding: 20px 35px;
     display: flex;
@@ -87,7 +117,7 @@ footer {
 footer ul {
     display: flex;
     list-style: none; 
-   
+    justify-content: space-between;
 }
 
 footer ul li a {
