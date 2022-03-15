@@ -74,10 +74,10 @@ header nav ul li a {
     
 }
 
-.hero-subtitle img {
+/* .hero-subtitle img {
   width : 200px;
   height: auto;  
-}
+} */
 
 .hero-subtitle h2, .hero-subtitle p {    
     color: var(--font-color);
