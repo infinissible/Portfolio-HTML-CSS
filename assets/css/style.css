@@ -75,12 +75,10 @@ header nav ul li a {
 }
 
 .hero-subtitle h2, .hero-subtitle p {    
-    color: var(--font-color);
-    display: flex;
-    padding: 5px;
-    width: 200px;
+    color: var(--font-color);    
+    padding: 5px;    
     line-height: 1.2;
-    
+    text-align: center;    
 }
 
 .lists {
@@ -116,96 +114,69 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;    
-    padding: 30px 5px;
-    width: 1600px;
-    
+    padding: 30px 5px;    
 }
 
-.work1 {
+.applications img {
     opacity: 0.7;
-    background-image: url("../images/work1.jpg");
-    background-size: cover;       
-    border: solid 3px var(--main-color);    width: 100%;
-    margin: 10px;
-    display: flex;    
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-             
 }
 
-.work1:hover {
-    opacity: 1.0;
-}
-
-.work2 {
-    background-image: url("../images/work2.jpg"); 
-}
-
-.work3 {
-    background-image: url("../images/work3.jpg");
-}
-
-.work4 {
-    background-image: url("../images/work4.jpg");
-}
-
-.work5 {
-    background-image: url("../images/work5.jpg");
-}
-
-.works {
-    opacity: 0.7;
-    background-size: cover;      
-    border: solid 3px var(--main-color);
-    width: 48%;
-    height: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 10px 0px;    
-    justify-content: flex-start;  
-    
-}
-
-.works:hover {
-    opacity: 1.0;
-}
-
-.name-tag {
-    margin: 400px 0px 50px 0px;
-    background-color: var(--main-color);
-    display: inline-block;    
-    padding: 20px;
-      
-}
-
-.name-tag:not(:hover){
+.applications img:hover {
     opacity: 1;
 }
 
-.name-tag2 {
-    margin: 80px 0px 40px 0px;
+.work1 {             
+    border: solid 3px var(--main-color);        
+    display: flex;    
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    position: relative;   
+    width: 100%;         
+}
+
+.works, .boxes a {         
+    border: solid 3px var(--main-color);     
+    display: flex;
+    flex-wrap: wrap;
+    width: 49%;
+    margin: 10px 0px; 
+    justify-content: flex-start;  
+    position: relative;    
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.name-tag {    
     background-color: var(--main-color);
     display: inline-block;    
     padding: 20px;
-    
+    position: absolute;
+    top: 60%;
+}
+/* 
+.work1 a, .works a {
+    text-decoration: none;
+} */
+
+.name-tag2 {    
+    background-color: var(--main-color);
+    display: inline-block;    
+    padding: 20px;
+    position: absolute;
+    top:50%
 }
 .name-tag h3 {
-    font-size: 20px;
+    font-size: 1.6vw;
     font-weight: bolder;
 }
 
 .name-tag h4 {
-    font-size: 15px;
-    color: var(--contents-color);
-}
-
-.name-tag2 h3 {
-    font-size: 20px;
-    font-weight: bolder;
-}
-
-.name-tag2 h4 {
-    font-size: 15px;
+    font-size: 1.4vw;
     color: var(--contents-color);
 }
 
@@ -252,14 +223,10 @@ header nav ul li a {
   .hero-subtitle img {
       width: 250px;
       height: auto;      
-  }
+  }  
 
-  .works {
+  .works, .boxes a {
     width: 100%;
-  }
-
-  .work1 {
-    background-position: center;
   }
 }
 
@@ -308,23 +275,16 @@ header nav ul li a {
   .contact {
       margin: 20px;
   }
+  .name-tag h3 {
+    font-size: 15px;
+    font-weight: bolder;
+}
 
-  .work1 {
-      margin: 5px;
-      margin-left: 0;
-  }
-
-  .works {
-      width: 100%;
-  }
-
-  .work-even {
-      margin-right: 6px;
-  }
-
-  .work1 {
-    background-position: center;
-  }    
+  .name-tag h4 {
+    font-size: 13px;
+    color: var(--contents-color);
+}
+  
 }
 
 
@@ -343,7 +303,21 @@ header nav ul li a {
   }
 
   header nav ul {
-      margin-top: 0;
+      margin: 10px;
+  }
+
+  header nav ul li a {
+      padding: 0;
+      font-size: 20px;
+  }
+
+  .hero-subtitle h2 {
+      font-size: 25px;
+  }
+
+  .hero-subtitle p {
+      font-size: 20px;
+      line-height: 1.5;
   }
 
   .lists {
@@ -353,22 +327,39 @@ header nav ul li a {
 
   .list {
       margin: 20px;
-      padding: 10px;
+      padding: 5px;
       border-bottom: solid 3px var(--contents-color);
       border-right: none;
       text-align: center;
   }
 
+  .applications {
+      padding: 0 5px;
+  }
   .list-content {
       text-align: center;
       margin: 20px;
   }
 
-  .works {
+  .name-tag h3 {
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+  .name-tag h4 {
+    font-size: 13px;
+    color: var(--contents-color);
+}
+
+  .contact {
+      margin: 10px;
+  }
+
+  .contact-me {
       width: 100%;
   }
 
-  .work1 {
-      background-position: center;
+  .position {
+      width: 150px;
   }
 }
