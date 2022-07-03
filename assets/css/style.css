@@ -10,6 +10,10 @@
   --contents-color: rgb(89, 89, 102);
 }
 
+.content {
+  width: 90%;
+  margin: auto;
+}
 header {
   padding: 20px 35px 20px 0px;
   background-color: rgb(56, 63, 77);
@@ -80,6 +84,11 @@ header nav ul li a {
   text-align: start;
 }
 
+.hero-subtitle a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
 .lists {
   display: flex;
   justify-content: flex-start;
@@ -107,8 +116,12 @@ header nav ul li a {
   display: flex;
 }
 
+.nav li:hover {
+  opacity: 0.7;
+}
+
 .list {
-  margin: 30px 20px 10px 80px;
+  margin: 20px 10px;
   padding: 0px 10px 50px 0px;
   border-right: solid 3px var(--contents-color);
   text-align: right;
@@ -132,28 +145,29 @@ header nav ul li a {
 }
 
 .applications img {
-  opacity: 0.7;
-}
-
-.applications img:hover {
   opacity: 1;
 }
+/* 
+.applications img:hover {
+  opacity: 1;
+} */
 
 .work1 {
-  border: solid 3px var(--main-color);
+  /* border: solid 3px var(--main-color); */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  width: 100%;
+  width: 49%;
+  margin-bottom: 60px;
 }
 
 .works,
 .boxes a {
-  border: solid 3px var(--main-color);
+  /* border: solid 3px var(--main-color); */
   display: flex;
   flex-wrap: wrap;
-  width: 49%;
+  width: 90%;
   margin: 10px 0px;
   justify-content: flex-start;
   position: relative;
@@ -169,9 +183,10 @@ header nav ul li a {
 .name-tag {
   background-color: var(--main-color);
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
   position: absolute;
-  top: 60%;
+  top: 50%;
+  opacity: 0.9;
 }
 /* 
 .work1 a, .works a {
@@ -181,18 +196,49 @@ header nav ul li a {
 .name-tag2 {
   background-color: var(--main-color);
   display: inline-block;
-  padding: 20px;
+  padding: 10px;
   position: absolute;
-  top: 50%;
+  top: 45%;
+  width: 80%;
+  opacity: 0;
 }
-.name-tag h3 {
-  font-size: 1.6vw;
+.name-tag2:hover {
+  background-color: var(--main-color);
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  top: 45%;
+  width: 80%;
+  opacity: 0.9;
+}
+
+.name-tag a {
+  color: var(--font-color);
+  font-size: 1.4vw;
+}
+
+.name-tag2 h3 {
+  font-size: 1.2vw;
   font-weight: bolder;
 }
 
-.name-tag h4 {
-  font-size: 1.4vw;
+.name-tag2 h4 {
+  font-size: 1.2vw;
   color: var(--contents-color);
+}
+
+.name-tag2 a {
+  color: var(--font-color);
+  font-size: 1.8vw;
+}
+
+.fa-brands:hover,
+.fa-solid:hover {
+  opacity: 0.7;
+}
+
+.pt-1 {
+  padding-top: 5px;
 }
 
 .contact-me {
@@ -286,7 +332,7 @@ header nav ul li a {
   }
 
   .list {
-    margin: 30px 20px 10px 20px;
+    margin: 20px 10px;
   }
 
   .contact {
@@ -341,7 +387,7 @@ header nav ul li a {
   }
 
   .list {
-    margin: 20px;
+    margin: 20px 10px;
     padding: 5px;
     border-bottom: solid 3px var(--contents-color);
     border-right: none;
