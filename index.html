@@ -2,190 +2,209 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width", initia-scale="1.0" />
-    <title>Portfolio - Jin (Seungjin)</title>
+    <meta name="viewport" content="width=device-width" , initia-scale="1.0" />
+    <title>Jin Lee</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
+    <script
+      src="https://kit.fontawesome.com/41d0e00cbc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-    <h1>
-      <a href="#">Jin (Seungjin)</a>
-    </h1>
-    <nav>
-      <ul>
-        <li>
-          <a href="#About-Me">About Me</a>
-        </li>
-        <li>
-          <a href="#Work">Work</a>
-        </li>
-        <li>
-          <a href="#Contact-Me">Contact Me</a>
-        </li>
-        <li>
-          <a href="./resume.html">Resume</a>
-        </li>
-      </ul>
-    </nav>
+      <h1>
+        <a href="#">Jin Lee</a>
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="#About-Me">About Me</a>
+          </li>
+          <li>
+            <a href="#Work">Work</a>
+          </li>
+          <li>
+            <a href="./resume.html">Resume</a>
+          </li>
+          <li>
+            <a href="#Contact-Me">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    
-    <section class="hero">      
+
+    <section class="hero">
       <div class="hero-subtitle">
-        <img src="./assets/images/photo.jpg" alt="Jin's photo" width= 300px, height=auto>
-        <h2>Seungjin Lee</h2>
-        <p>
-          Jin (Seungjin)
-          <br>Future full stack developer 
-         
+        <img
+          src="./assets/images/photo.jpg"
+          alt="Jin's photo"
+          width="300px,"
+          height="auto"
+        />
+
+        <h2>Seungjin (Jin) Lee</h2>
+        <p class="text">
+          Jin for short <br />
+          Junior full stack web developer <br />
+          Riverside, CA
         </p>
+        <div class="flex">
+          <div class="icons">
+            <a href="mailto:infinissible@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+          <div class="icons">
+            <a href="https://github.com/infinissible"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/jinlee0303/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <div class="icons">
+            <a href="https://twitter.com/SJin0303"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="About-Me" class="lists">
       <div class="list">
-        <h2 class="font-color position">
-          About Me    
-        </h2>
-      
-    </div>
-       
-    <div class="list-content font-color">
-        <p>
-          A full stack developer. I have been trained with the HTML, CSS, and JavaScript, and interested in 
-          the data structures and algorithms for organizing and manipulating the data efficiency. 
-          I have done with some practical and multifunctional projects from a bootcamp. With that experience,
-          I believe that I am an employee-competitive candidate.
-          <br>
-          <br>
-          I switched a job from a chemical engineer with a Ph.D degree to the software engineer 
-          as I have always been dreaming to be a developer since I was a young boy.
-          I was not brave to start something new as a job in my 30's. But I finally decided to learn and 
-          to become the developer before never figured it out. I am now happy and satisfied with the developing.
-        </p>
-      </div> 
+        <h2 class="font-color position">About Me</h2>
+      </div>
 
+      <div class="list-content font-color">
+        <p>
+          Full stack web developer leveraging chemical engineering background.
+          Earned a certificate in full stack development from a coding boot camp
+          in the UC Riverside Extension. Passionate about developing apps, with
+          high quality, efficiency, and responsibility to end users. Strengths
+          in meeting deadlines, learning fast, and teamwork. Excited to work as
+          a team, and learn new skills to build applications for the market in
+          the real world.
+        </p>
+      </div>
     </section>
 
     <section id="Work" class="lists">
       <div class="list">
-        <h2 class="font-color position">
-          Work  
-        </h2>
+        <h2 class="font-color position">Work</h2>
       </div>
-      <div class="applications"> 
-
-        <a href="https://self-management-app.herokuapp.com/"> 
-        <div class="work1">                                       
-            <img src="./assets/images/group-project-02.png" alt="" width=100% />                              
-            <div class="name-tag font-color">            
-                <h3>
-                  SELF-MANAGEMENT-APP
-                </h3>
-                <h4>
-                  Group project 2 </br>
-                  Bcrypt/MySQL/TailwindCSS/Node/ </br>
-                  Express/Handlebars/Heroku/APIs
-                </h4>                                                              
-            </div> 
+      <div class="applications">
+        <!-- <a href="https://self-management-app.herokuapp.com/"> -->
+        <div id="myBtn" class="work1">
+          <img src="./assets/images/group-project-02.png" alt="" width="100%" />
+          <div class="name-tag font-color">
+            <h3>SELF-MANAGEMENT-APP</h3>
+            <h4>MySQL/Node/Express/ Handlebars/Heroku</h4>
+          </div>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <p>Text</p>
+            </div>
+          </div>
         </div>
-        </a>  
+        <!-- </a> -->
 
         <div class="boxes">
-
-          <a href="https://uhmammoth.github.io/GamePlatforms/" width=48%>                      
-            <img src="./assets/images/group-project-01.jpg" alt="" width=100% />          
-            <div class="name-tag font-color">  
-              <h3>
-                GAME DATABASE
-              </h3>
-              <h4>
-                Group project 1</br>
-                  HTML/CSS/JavasScript/APIs
-              </h4>           
-            </div>        
-           </a>
-
-            <a href="https://infinissible.github.io/run-buddy/" width=48%>                      
-              <img src="./assets/images/work1.jpg" alt="" width=100% />          
-              <div class="name-tag font-color">  
-                <h3>
-                  Run Buddy
-                </h3>
-                <h4>
-                  HTML/CSS
-                </h4>           
-              </div>        
-             </a>
-
-            <a href="https://infinissible.github.io/Ch03-Passwordgenerator/" width=48%>
-            <img src="./assets/images/work2.jpg" alt="" width=100% />
+          <a href="https://uhmammoth.github.io/GamePlatforms/" width="48%">
+            <img
+              src="./assets/images/group-project-01.jpg"
+              alt=""
+              width="100%"
+            />
             <div class="name-tag font-color">
-              <h3>
-                Password Generator
-              </h3>
-              <h4>
-                JavaScript
-              </h4>
+              <h3>GAME DATABASE</h3>
+              <h4>HTML/CSS/JavasScript</h4>
             </div>
           </a>
-         
-          <a href="https://infinissible.github.io/Quizmaker/" width=48%>
-            <img src="./assets/images/work3.jpg" alt="" width=100% />
+
+          <a href="https://infinissible.github.io/run-buddy/" width="48%">
+            <img src="./assets/images/work1.jpg" alt="" width="100%" />
             <div class="name-tag font-color">
-              <h3>
-                Code Quiz
-              </h3>
-              <h4>
-                Web APIs
-              </h4>
+              <h3>Run Buddy</h3>
+              <h4>HTML/CSS</h4>
             </div>
           </a>
-        
-          <a href="https://infinissible.github.io/Amazing-work-day-scheduler/" width=48%> 
-            <img src="./assets/images/work4.jpg" alt="" width=100% />
-            <div class="name-tag font-color">
-              <h3>
-                Work Day Scheduler
-              </h3>
-              <h4>
-                Third-Party APIs
-              </h4>
-            </div>
-            </a>
 
-            <a href="https://infinissible.github.io/Smart-weather-dashboard/" width=48%>  
-              <img src="./assets/images/weather.jpg" alt="" width=100% />
-              <div class="name-tag font-color">
-                <h3>
-                  Weather Dashboard
-                </h3>
-                <h4>
-                  Server-Side APIs
-                </h4>
-              </div>
-            </a>    
-        </div>    
+          <a
+            href="https://infinissible.github.io/Ch03-Passwordgenerator/"
+            width="48%"
+          >
+            <img src="./assets/images/work2.jpg" alt="" width="100%" />
+            <div class="name-tag font-color">
+              <h3>Password Generator</h3>
+              <h4>JavaScript</h4>
+            </div>
+          </a>
+
+          <a href="https://infinissible.github.io/Quizmaker/" width="48%">
+            <img src="./assets/images/work3.jpg" alt="" width="100%" />
+            <div class="name-tag font-color">
+              <h3>Code Quiz</h3>
+              <h4>Web APIs</h4>
+            </div>
+          </a>
+
+          <a
+            href="https://infinissible.github.io/Amazing-work-day-scheduler/"
+            width="48%"
+          >
+            <img src="./assets/images/work4.jpg" alt="" width="100%" />
+            <div class="name-tag font-color">
+              <h3>Work Day Scheduler</h3>
+              <h4>Third-Party APIs</h4>
+            </div>
+          </a>
+
+          <a
+            href="https://infinissible.github.io/Smart-weather-dashboard/"
+            width="48%"
+          >
+            <img src="./assets/images/weather.jpg" alt="" width="100%" />
+            <div class="name-tag font-color">
+              <h3>Weather Dashboard</h3>
+              <h4>Server-Side APIs</h4>
+            </div>
+          </a>
+        </div>
       </div>
-           
-          
-      </section>          
+    </section>
 
     <section id="Contact-Me" class="lists">
       <div class="list">
-        <h2 class="font-color position">
-          Contact Me</h2>
+        <h2 class="font-color position">Contact Me</h2>
       </div>
       <article class="contact-me">
         <div class="contact">
-          <a href="tel:9514288298">951.428.8298</a>
+          <a href="mailto:infinissible@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
         </div>
         <div class="contact">
-          <a href="mailto:infinissible@gmail.com">infinissible@gmail.com</a>
+          <a href="https://github.com/infinissible"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
         <div class="contact">
-          <a href="https://github.com/infinissible">Github</a>
+          <a href="https://www.linkedin.com/in/jinlee0303/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </div>
-      </article>      
-    </section>         
-    </body>
+        <div class="contact">
+          <a href="https://twitter.com/SJin0303"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+      </article>
+    </section>
+  </body>
+
+  <script src="./assets/js/modal.js"></script>
 </html>
